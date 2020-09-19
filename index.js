@@ -283,7 +283,7 @@ var bird = {
     renderRankList: function(){
         //innerHTML = '<div></div>'
         var template = '';
-        for(var i = 0; i < 8; i++){
+        for(var i = 0; i < ( (this.scoreArr.length<8) ? this.scoreArr.length : 8 ); i++){
             var degreeClass = '';
             switch(i){
                 case 0:
